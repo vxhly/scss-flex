@@ -3,6 +3,8 @@
 > <https://github.com/lzxb/flex.css>
 >
 > 使用 SASS 语法编写，使用 gulp 前端打包工具进行打包
+>
+> 针对 flexbox 布局方式的详细介绍：[Flex 布局](https://vxhly.github.io/2016/08/11/flexbox-layout/)
 
 ### download
 

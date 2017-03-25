@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.2.1
+ * @vaersion 1.2.2
  * @author 欧鹏程 vxhly <904334946@qq.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -33,6 +33,30 @@
         }
     }
 }
+
+/**
+  * 定义 inline-flex 布局
+  */
+[inline-flex] {
+    display: inline-flex;
+    overflow: hidden;
+
+    > {
+        *,
+        [inline-flex] {
+            overflow: hidden;
+        }
+
+        * {
+            display: inline-block;
+        }
+
+        [inline-flex] {
+            display: inline-flex;
+        }
+    }
+}
+
 
 /**
   *  主轴方向：从左到右(默认)
