@@ -7,17 +7,20 @@
   ],
   "license": "MIT",
   "keywords": [
+    "scss-flex",
+    "flex-scss",
+    "flex",
+    "scss",
+    "sass",
+    "flex-sass",
+    "sass-flex",
     "flexbox",
     "flex.css",
-    "flex-css",
     "vue-flex",
     "css-flex",
-    "flexibule",
-    "flex-sass",
-    "sass-flex"
+    "flexibule"
   ],
   "homepage": "https://github.com/vxhly/scss-flex#readme",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
