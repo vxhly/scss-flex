@@ -1,0 +1,44 @@
+{
+  "name": "scss-flex",
+  "version": "1.2.1",
+  "description": "flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器",
+  "main": "dist/flex.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vxhly/scss-flex.git"
+  },
+  "keywords": [
+    "scss-flex",
+    "flex-scss",
+    "flex",
+    "scss",
+    "sass",
+    "flex-sass",
+    "sass-flex",
+    "flexbox",
+    "flex.css",
+    "vue-flex",
+    "css-flex",
+    "flexibule"
+  ],
+  "author": "vxhly <904334946@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vxhly/scss-flex/issues"
+  },
+  "homepage": "https://github.com/vxhly/scss-flex#readme",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

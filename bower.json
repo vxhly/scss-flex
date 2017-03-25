@@ -1,0 +1,28 @@
+{
+  "name": "scss-flex",
+  "description": "flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器",
+  "main": "dist/flex.css",
+  "authors": [
+    "vxhly <904334946@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flexbox",
+    "flex.css",
+    "flex-css",
+    "vue-flex",
+    "css-flex",
+    "flexibule",
+    "flex-sass",
+    "sass-flex"
+  ],
+  "homepage": "https://github.com/vxhly/scss-flex#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
