@@ -10,7 +10,7 @@
 >
 > 针对 flexbox 布局方式的详细介绍：[Flex 布局](https://vxhly.github.io/2016/08/11/flexbox-layout/)
 
-### download
+## download
 
     git clone https://github.com/vxhly/scss-flex.git
 
@@ -22,7 +22,7 @@
 
     bower install scss-flex --save
 
-### 为什么需要 flex.css?
+## 为什么需要 flex.css?
 
     在移动端开发中，并不是所有的浏览器，webview，微信等各种版本都支持标准的 flex，
     但是基本上都会支持 -webkit-box，所以 scss-flex.css 的主要作用是保证每一个属性都能支持标准 flex 或旧版本的 -webkit-box。
@@ -30,7 +30,7 @@
     回滚到旧版本的 -webkit-box，保证移动设备中能呈现出一样的布局效果。
     于是，一款移动端快速布局的神器诞生了...
 
-### support
+## support
 
     flex 布局分为旧版本 `dispaly: box`;过渡版本 `dispaly: flexbox`;以及现在的标准版本 `display: flex`;
 
@@ -49,7 +49,7 @@
 
 ![Alt text](https://github.com/vxhly/scss-flex/blob/master/img/caniuse.png)
 
-### use
+## use
 
 ```html
 <link rel="stylesheet" href="./dist/css/scss-flex.css">
@@ -65,7 +65,7 @@
   </div>
 ```
 
-### flex属性大全
+## flex属性大全
 
     dir：主轴方向
         top：从上到下
@@ -92,7 +92,7 @@
         last：最后一个子元素不要多余空间，其他子元素平分多余空间
         justify：两端第一个元素不要多余空间，其他子元素平分多余空间
 
-### flex-box 属性说明
+## flex-box 属性说明
 
     取值范围(`0-10`)，单独设置子元素多余空间的如何分配，设置为 0，则子元素不占用多余的多余空间
     多余空间分配 = 当前 flex-box 值/子元素的 flex-box 值相加之和

@@ -12,11 +12,12 @@ var $ = gulpLoadPlugins(); // 定义变量
 var scssSrc = './src/*.scss';
 
 
-gulp.task('default', function() {
+gulp.task('default', function () {
   return gulp.src(scssSrc)
     .pipe($.sass({
-      outputStyle: 'compressed'
-    }).on('error', $.sass.logError))
+        outputStyle: 'compressed'
+      })
+      .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: [
         'ie >= 8',
@@ -35,10 +36,14 @@ gulp.task('default', function() {
       indent: '  ',
       openbrace: 'end-of-line',
       autosemicolon: true
-     }))
+    }))
     .pipe(gulp.dest('./dist'))
-    .pipe($.rename({ suffix: '.min' }))  
-    .pipe($.minifyCss())
+    .pipe($.rename({
+      suffix: '.min'
+    }))
+    .pipe($.cleanCss({
+      debug: true,
+      compatibility: 'ie8'
+    }))
     .pipe(gulp.dest('./dist'))
 });
-
