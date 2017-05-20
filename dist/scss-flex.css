@@ -7,7 +7,7 @@
  * 参考地址：https://github.com/lzxb/flex.css
  * 语法：scss
  *
- * 描述：flexbox 布局模式是一种新的 CSS3，是专为现代网络更复杂的需求
+ * @description：flexbox 布局模式是一种新的 CSS3，是专为现代网络更复杂的需求
  */[flex] {
   display: -webkit-box;
   display: -webkit-flex;
