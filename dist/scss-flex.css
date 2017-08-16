@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.2.3
+ * @vaersion 1.3.0
  * @author 欧鹏程 vxhly <904334946@qq.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -30,30 +30,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-[inline-flex] {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: hidden;
-}
-
-[inline-flex] > *,
-[inline-flex] > [inline-flex] {
-  overflow: hidden;
-}
-
-[inline-flex] > * {
-  display: inline-block;
-}
-
-[inline-flex] > [inline-flex] {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 [flex~='dir:left'] {
@@ -102,11 +78,17 @@
   justify-content: flex-end;
 }
 
-[flex~='main:justify'] {
+[flex~='main:between'] {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+[flex~='main:around'] {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 [flex~='main:center'] {

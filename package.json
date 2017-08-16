@@ -1,6 +1,6 @@
 {
   "name": "scss-flex",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器，可以通过 bower 和 npm 下载",
   "main": "dist/scss-flex.css",
   "scripts": {

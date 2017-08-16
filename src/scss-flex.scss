@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.2.3
+ * @vaersion 1.3.0
  * @author 欧鹏程 vxhly <904334946@qq.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -10,197 +10,209 @@
  * @description：flexbox 布局模式是一种新的 CSS3，是专为现代网络更复杂的需求
  */
 /**
-  *  定义 flex 布局
+  * [定义 flex 布局]
   */
 [flex] {
-  display : flex;
+  display: flex;
   overflow: hidden;
+
   > {
     *,
     [flex] {
       overflow: hidden;
     }
+
     * {
       display: block;
     }
+
     [flex] {
       display: flex;
     }
   }
 }
 /**
-  * 定义 inline-flex 布局
-  */
-[inline-flex] {
-  display : inline-flex;
-  overflow: hidden;
-  > {
-    *,
-    [inline-flex] {
-      overflow: hidden;
-    }
-    * {
-      display: inline-block;
-    }
-    [inline-flex] {
-      display: inline-flex;
-    }
-  }
-}
-/**
-  *  主轴方向：从左到右(默认)
+  * [主轴方向：从左到右(默认)]
   */
 [flex~='dir:left'] {
   flex-direction: row;
 }
 /**
-  *  主轴方向：从右到左)
+  * [主轴方向：从右到左)]
   */
 [flex~='dir:right'] {
   flex-direction: row-reverse;
 }
 /**
-  *  主轴方向：从上到下
+  * [主轴方向：从上到下]
   */
 [flex~='dir:top'] {
   flex-direction: column;
 }
 /**
-  *  主轴方向：从下到上
+  * [主轴方向：从下到上]
   */
 [flex~='dir:bottom'] {
   flex-direction: column-reverse;
 }
 /**
-  *  主轴对齐方式：从左到右(默认)
+  * [主轴对齐方式：从左到右(默认)]
   */
 [flex~='main:left'] {
   justify-content: flex-start;
 }
 /**
-  *  主轴对齐方式：从右到左
+  * [主轴对齐方式：从右到左]
   */
 [flex~='main:right'] {
   justify-content: flex-end;
 }
 /**
-  *  主轴对齐方式：两端对齐
+  * [主轴对齐方式：两端对齐]
   */
-[flex~='main:justify'] {
+[flex~='main:between'] {
   justify-content: space-between;
 }
 /**
-  *  主轴对齐方式：居中对齐
+  * [主轴对齐方式：分散对齐]
+  */
+[flex~='main:around'] {
+  justify-content: space-around;
+}
+/**
+  * [主轴对齐方式：居中对齐]
   */
 [flex~='main:center'] {
   justify-content: center;
 }
 /**
-  *  交叉轴齐方式：从上到下(默认)
+  * [交叉轴齐方式：从上到下(默认)]
   */
 [flex~='cross:top'] {
   align-items: flex-start;
 }
 /**
-  *  交叉轴齐方式：从下到上
+  * [交叉轴齐方式：从下到上]
   */
 [flex~='cross:bottom'] {
   align-items: flex-end;
 }
 /**
-  *  交叉轴齐方式：居中对齐
+  * [交叉轴齐方式：居中对齐]
   */
 [flex~='cross:center'] {
   align-items: center;
 }
 /**
-  *  交叉轴齐方式：跟随内容高度对齐
+  * [交叉轴齐方式：跟随内容高度对齐]
   */
 [flex~='cross:baseline'] {
   align-items: baseline;
 }
 /**
-  *  交叉轴齐方式：高度并排铺满
+  * [交叉轴齐方式：高度并排铺满]
   */
 [flex~='cross:stretch'] {
   align-items: stretch;
 }
 /**
-  *  子元素平分宽度
+  * [子元素平分宽度]
   */
 [flex~="box:first"] > *,
 [flex~="box:justify"] > *,
 [flex~="box:last"] > *,
 [flex~="box:mean"] > * {
-  width      : 0;
-  height     : auto;
-  flex-grow  : 1;
+  width: 0;
+  height: auto;
+  flex-grow: 1;
   flex-shrink: 1;
 }
+/**
+  * [子元素平分宽度]
+  */
 [flex~="box:first"] > :first-child,
 [flex~="box:last"] > :last-child {
-  width      : auto;
-  flex-grow  : 0;
+  width: auto;
+  flex-grow: 0;
   flex-shrink: 0;
 }
+/**
+  * [水平对齐]
+  */
 [flex~="box:justify"] > {
   :first-child,
   :last-child {
-    width      : auto;
-    flex-grow  : 0;
+    width: auto;
+    flex-grow: 0;
     flex-shrink: 0;
   }
 }
+/**
+  * [顶部对齐方式]
+  */
 [flex~="dir:top"] {
   &[flex~="box:first"] > *,
   &[flex~="box:justify"] > *,
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
-    width      : auto;
-    height     : 0;
-    flex-grow  : 1;
+    width: auto;
+    height: 0;
+    flex-grow: 1;
     flex-shrink: 1;
   }
 }
+/**
+  * [底部对齐方式]
+  */
 [flex~="dir:bottom"] {
   &[flex~="box:first"] > *,
   &[flex~="box:justify"] > *,
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
-    width      : auto;
-    height     : 0;
-    flex-grow  : 1;
+    width: auto;
+    height: 0;
+    flex-grow: 1;
     flex-shrink: 1;
   }
 }
+/**
+  * [顶部对齐方式]
+  */
 [flex~="dir:top"] {
   &[flex~="box:first"] > :first-child,
   &[flex~="box:last"] > :last-child {
-    height     : auto;
-    flex-grow  : 0;
+    height: auto;
+    flex-grow: 0;
     flex-shrink: 0;
   }
+
   &[flex~="box:justify"] > {
     :first-child,
     :last-child {
-      height     : auto;
-      flex-grow  : 0;
+      height: auto;
+      flex-grow: 0;
       flex-shrink: 0;
     }
   }
 }
+/**
+  * [底部对齐方式]
+  */
 [flex~="dir:bottom"] {
   &[flex~="box:first"] > :first-child,
   &[flex~="box:justify"] > :first-child [flex~="dir:bottom"][flex~="box:justify"] > :last-child,
   &[flex~="box:last"] > :last-child {
-    height     : auto;
-    flex-grow  : 0;
+    height: auto;
+    flex-grow: 0;
     flex-shrink: 0;
   }
 }
+/**
+  * [单个盒子对齐方式]
+  */
 @for $i from 0 through 10 {
   [flex-box="#{$i}"] {
-    flex-grow  : $i;
+    flex-grow: $i;
     flex-shrink: $i;
   }
 }
