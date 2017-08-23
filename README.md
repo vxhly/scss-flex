@@ -75,7 +75,7 @@ flex.css同时能兼容新版本和旧版本，保证了浏览器不支持新版
   </div>
 ```
 
-## flex属性大全
+## flex 属性大全
 
 ```
 dir：主轴方向
@@ -83,6 +83,25 @@ dir：主轴方向
     right：从右到左
     bottom：从下到上
     left：从左到右（默认）
+
+warp: 换行方式
+    nowrap：不换行（默认）
+    wrap：换行，第一行在上方
+    reverse：换行，第一行在下方
+
+flow: 布局方式
+    left-nowarp: 从左到右且不换行(默认)
+    left-warp: 从左到右且换行，第一行在上方
+    left-reverse: 从左到右且换行，第一行在下方
+    right-nowarp: 从右到左且不换行
+    right-warp: 从右到左且换行，第一行在上方
+    right-reverse: 从右到左且换行，第一行在下方
+    top-nowarp: 从上到下且不换行
+    top-warp: 从上到下且换行，第一行在上方
+    top-reverse: 从上到下且换行，第一行在下方
+    bottom-nowarp: 从下到上且不换行
+    bottom-warp: 从下到上且换行，第一行在上方
+    bottom-reverse: 从下到上且换行，第一行在下方
 
 main：主轴对齐方式
     right：从右到左
@@ -97,6 +116,9 @@ cross：交叉轴对齐方式
     baseline：基线对齐
     center：居中对齐
     stretch：高度并排铺满
+
+mian-cross: 主轴交叉轴对齐方式
+    center: 居中
 
 box：子元素设置
     mean：子元素平分空间

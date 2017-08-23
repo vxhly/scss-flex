@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.3.0
+ * @vaersion 1.4.0
  * @author 欧鹏程 vxhly <904334946@qq.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -12,6 +12,7 @@
 /**
   * [定义 flex 布局]
   */
+
 [flex] {
   display: flex;
   overflow: hidden;
@@ -34,90 +35,260 @@
 /**
   * [主轴方向：从左到右(默认)]
   */
+
 [flex~='dir:left'] {
   flex-direction: row;
 }
 /**
   * [主轴方向：从右到左)]
   */
+
 [flex~='dir:right'] {
   flex-direction: row-reverse;
 }
 /**
   * [主轴方向：从上到下]
   */
+
 [flex~='dir:top'] {
   flex-direction: column;
 }
 /**
   * [主轴方向：从下到上]
   */
+
 [flex~='dir:bottom'] {
   flex-direction: column-reverse;
 }
 /**
+  * [换行方式：不换行(默认)]
+  */
+
+[flex~='flex:nowarp'] {
+  flex-wrap: nowrap;
+}
+/**
+  * [换行方式：换行，第一行在上方]
+  */
+
+[flex~='flex:warp'] {
+  flex-wrap: wrap;
+}
+/**
+  * [换行方式：换行，第一行在下方]
+  */
+
+[flex~='flex:reverse'] {
+  flex-wrap: wrap-reverse;
+}
+/**
+  * [布局方式：从左到右且不换行(默认)]
+  */
+
+[flex~='flow:left-nowarp'] {
+  flex-flow: row nowrap;
+}
+/**
+  * [布局方式：从左到右且换行，第一行在上方]
+  */
+
+[flex~='flow:left-warp'] {
+  flex-flow: row wrap;
+}
+/**
+  * [布局方式：从左到右且换行，第一行在下方]
+  */
+
+[flex~='flow:left-reverse'] {
+  flex-flow: row wrap-reverse;
+}
+/**
+  * [布局方式：从右到左且不换行]
+  */
+
+[flex~='flow:right-nowarp'] {
+  flex-flow: row-reverse nowrap;
+}
+/**
+  * [布局方式：从右到左且换行，第一行在上方]
+  */
+
+[flex~='flow:right-warp'] {
+  flex-flow: row-reverse wrap;
+}
+/**
+  * [布局方式：从右到左且换行，第一行在下方]
+  */
+
+[flex~='flow:right-reverse'] {
+  flex-flow: row-reverse wrap-reverse;
+}
+/**
+  * [布局方式：从上到下且不换行]
+  */
+
+[flex~='flow:top-nowarp'] {
+  flex-flow: column nowrap;
+}
+/**
+  * [布局方式：从上到下且换行，第一行在上方]
+  */
+
+[flex~='flow:top-warp'] {
+  flex-flow: column wrap;
+}
+/**
+  * [布局方式：从上到下且换行，第一行在下方]
+  */
+
+[flex~='flow:top-reverse'] {
+  flex-flow: column wrap-reverse;
+}
+/**
+  * [布局方式：从下到上且不换行]
+  */
+
+[flex~='flow:bottom-nowarp'] {
+  flex-flow: column-reverse nowrap;
+}
+/**
+  * [布局方式：从下到上且换行，第一行在上方]
+  */
+
+[flex~='flow:bottom-warp'] {
+  flex-flow: column-reverse wrap;
+}
+/**
+  * [布局方式：从下到上且换行，第一行在下方]
+  */
+
+[flex~='flow:bottom-reverse'] {
+  flex-flow: column-reverse wrap-reverse;
+}
+/**
   * [主轴对齐方式：从左到右(默认)]
   */
+
 [flex~='main:left'] {
   justify-content: flex-start;
 }
 /**
   * [主轴对齐方式：从右到左]
   */
+
 [flex~='main:right'] {
   justify-content: flex-end;
 }
 /**
   * [主轴对齐方式：两端对齐]
   */
+
 [flex~='main:between'] {
   justify-content: space-between;
 }
 /**
   * [主轴对齐方式：分散对齐]
   */
+
 [flex~='main:around'] {
   justify-content: space-around;
 }
 /**
   * [主轴对齐方式：居中对齐]
   */
+
 [flex~='main:center'] {
   justify-content: center;
 }
 /**
-  * [交叉轴齐方式：从上到下(默认)]
+  * [交叉轴对齐方式：从上到下(默认)]
   */
+
 [flex~='cross:top'] {
   align-items: flex-start;
 }
 /**
-  * [交叉轴齐方式：从下到上]
+  * [交叉轴对齐方式：从下到上]
   */
+
 [flex~='cross:bottom'] {
   align-items: flex-end;
 }
 /**
-  * [交叉轴齐方式：居中对齐]
+  * [交叉轴对齐方式：居中对齐]
   */
+
 [flex~='cross:center'] {
   align-items: center;
 }
 /**
-  * [交叉轴齐方式：跟随内容高度对齐]
+  * [交叉轴对齐方式：跟随内容高度对齐]
   */
+
 [flex~='cross:baseline'] {
   align-items: baseline;
 }
 /**
-  * [交叉轴齐方式：高度并排铺满]
+  * [交叉轴对齐方式：高度并排铺满]
   */
+
 [flex~='cross:stretch'] {
   align-items: stretch;
 }
 /**
+  * [主轴交叉轴对齐方式：居中]
+  */
+
+[flex~='mian-cross:center'] {
+  justify-content: center;
+  align-items: center;
+}
+/**
+  * [多根轴线的对齐方式：轴线占满整个交叉轴(默认)]
+  */
+
+[flex~='content:stretch'] {
+  align-content: stretch;
+}
+/**
+  * [多根轴线的对齐方式：与交叉轴的起点对齐]
+  */
+
+[flex~='content:start'] {
+  align-content: flex-start;
+}
+/**
+  * [多根轴线的对齐方式：与交叉轴的终点对齐]
+  */
+
+[flex~='content:end'] {
+  align-content: flex-end;
+}
+/**
+  * [多根轴线的对齐方式：与交叉轴的中点对齐]
+  */
+
+[flex~='content:center'] {
+  align-content: center;
+}
+/**
+  * [多根轴线的对齐方式：与交叉轴两端对齐，轴线之间的间隔平均分布]
+  */
+
+[flex~='content:between'] {
+  align-content: between;
+}
+/**
+  * [多根轴线的对齐方式：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍]
+  */
+
+[flex~='content:around'] {
+  align-content: around;
+}
+/**
   * [子元素平分宽度]
   */
+
 [flex~="box:first"] > *,
 [flex~="box:justify"] > *,
 [flex~="box:last"] > *,
@@ -130,6 +301,7 @@
 /**
   * [子元素平分宽度]
   */
+
 [flex~="box:first"] > :first-child,
 [flex~="box:last"] > :last-child {
   width: auto;
@@ -139,6 +311,7 @@
 /**
   * [水平对齐]
   */
+
 [flex~="box:justify"] > {
   :first-child,
   :last-child {
@@ -150,6 +323,7 @@
 /**
   * [顶部对齐方式]
   */
+
 [flex~="dir:top"] {
   &[flex~="box:first"] > *,
   &[flex~="box:justify"] > *,
@@ -164,6 +338,7 @@
 /**
   * [底部对齐方式]
   */
+
 [flex~="dir:bottom"] {
   &[flex~="box:first"] > *,
   &[flex~="box:justify"] > *,
@@ -178,6 +353,7 @@
 /**
   * [顶部对齐方式]
   */
+
 [flex~="dir:top"] {
   &[flex~="box:first"] > :first-child,
   &[flex~="box:last"] > :last-child {
@@ -198,6 +374,7 @@
 /**
   * [底部对齐方式]
   */
+
 [flex~="dir:bottom"] {
   &[flex~="box:first"] > :first-child,
   &[flex~="box:justify"] > :first-child [flex~="dir:bottom"][flex~="box:justify"] > :last-child,
