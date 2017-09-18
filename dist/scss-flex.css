@@ -1,8 +1,8 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.4.1
- * @author 欧鹏程 vxhly <904334946@qq.com>
+ * @vaersion 1.4.4
+ * @author 欧鹏程 vxhly <pengchengou@gmail.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
  * 语法：scss
@@ -13,12 +13,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-}
-
-[flex] > *,
-[flex] > [flex] {
-  overflow: hidden;
 }
 
 [flex] > * {
