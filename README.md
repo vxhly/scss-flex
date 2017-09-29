@@ -84,7 +84,7 @@ dir：主轴方向
     bottom：从下到上
     left：从左到右（默认）
 
-warp: 换行方式
+flex: 换行方式
     nowrap：不换行（默认）
     wrap：换行，第一行在上方
     reverse：换行，第一行在下方
