@@ -58,25 +58,25 @@
   -ms-flex-direction: column-reverse;
 }
 
-[flex~='flex:nowarp'] {
+[flex~='wrap:nowrap'] {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
 
-[flex~='flex:warp'] {
+[flex~='wrap:wrap'] {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-[flex~='flex:reverse'] {
+[flex~='wrap:reverse'] {
   -webkit-flex-wrap: wrap-reverse;
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
 
-[flex~='flow:left-nowarp'] {
+[flex~='flow:left-nowrap'] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
@@ -84,7 +84,7 @@
   flex-flow: row nowrap;
 }
 
-[flex~='flow:left-warp'] {
+[flex~='flow:left-wrap'] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
@@ -100,7 +100,7 @@
   flex-flow: row wrap-reverse;
 }
 
-[flex~='flow:right-nowarp'] {
+[flex~='flow:right-nowrap'] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-flow: row-reverse nowrap;
@@ -108,7 +108,7 @@
   flex-flow: row-reverse nowrap;
 }
 
-[flex~='flow:right-warp'] {
+[flex~='flow:right-wrap'] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-flow: row-reverse wrap;
@@ -124,7 +124,7 @@
   flex-flow: row-reverse wrap-reverse;
 }
 
-[flex~='flow:top-nowarp'] {
+[flex~='flow:top-nowrap'] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column nowrap;
@@ -132,7 +132,7 @@
   flex-flow: column nowrap;
 }
 
-[flex~='flow:top-warp'] {
+[flex~='flow:top-wrap'] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column wrap;
@@ -148,7 +148,7 @@
   flex-flow: column wrap-reverse;
 }
 
-[flex~='flow:bottom-nowarp'] {
+[flex~='flow:bottom-nowrap'] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-flow: column-reverse nowrap;
@@ -156,7 +156,7 @@
   flex-flow: column-reverse nowrap;
 }
 
-[flex~='flow:bottom-warp'] {
+[flex~='flow:bottom-wrap'] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-flow: column-reverse wrap;
