@@ -12,20 +12,30 @@
 
 ## download
 
-```
+```bash
 git clone https://github.com/vxhly/scss-flex.git
 ```
 
 ### npm
 
-```
+```bash
 npm install scss-flex --save
 ```
 
 ### bower
 
-```
+```bash
 bower install scss-flex --save
+```
+
+### use
+
+```bash
+<link href="./scss-flex.min.css">
+
+# or
+
+import 'scss-flex/src/scss-flex.scss'
 ```
 
 ## 为什么需要 flex.css?
