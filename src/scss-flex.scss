@@ -1,7 +1,12 @@
+// @Date:   2017-09-29 09:40:50 pm
+// @Email:  pengchengou@gmail.com
+// @Filename: scss-flex.scss
+// @Last modified time: 2017-12-15 11:34:57 am
+// @License: MIT
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.4.5
+ * @vaersion 1.4.6
  * @author 欧鹏程 vxhly <pengchengou@gmail.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -233,9 +238,9 @@
   * [主轴交叉轴对齐方式：居中]
   */
 
-[flex~='mian-cross:center'] {
+[flex~='main-cross:center'] {
   justify-content: center;
-  align-items: center;
+  align-items    : center;
 }
 /**
   * [多根轴线的对齐方式：轴线占满整个交叉轴(默认)]
@@ -287,9 +292,9 @@
 [flex~="box:justify"] > *,
 [flex~="box:last"] > *,
 [flex~="box:mean"] > * {
-  width: 0;
-  height: auto;
-  flex-grow: 1;
+  width      : 0;
+  height     : auto;
+  flex-grow  : 1;
   flex-shrink: 1;
 }
 /**
@@ -298,8 +303,8 @@
 
 [flex~="box:first"] > :first-child,
 [flex~="box:last"] > :last-child {
-  width: auto;
-  flex-grow: 0;
+  width      : auto;
+  flex-grow  : 0;
   flex-shrink: 0;
 }
 /**
@@ -309,8 +314,8 @@
 [flex~="box:justify"] > {
   :first-child,
   :last-child {
-    width: auto;
-    flex-grow: 0;
+    width      : auto;
+    flex-grow  : 0;
     flex-shrink: 0;
   }
 }
@@ -323,9 +328,9 @@
   &[flex~="box:justify"] > *,
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
-    width: auto;
-    height: 0;
-    flex-grow: 1;
+    width      : auto;
+    height     : 0;
+    flex-grow  : 1;
     flex-shrink: 1;
   }
 }
@@ -337,9 +342,9 @@
   &[flex~="box:justify"] > *,
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
-    width: auto;
-    height: 0;
-    flex-grow: 1;
+    width      : auto;
+    height     : 0;
+    flex-grow  : 1;
     flex-shrink: 1;
   }
 }
@@ -349,15 +354,16 @@
 [flex~="dir:top"] {
   &[flex~="box:first"] > :first-child,
   &[flex~="box:last"] > :last-child {
-    height: auto;
-    flex-grow: 0;
+    height     : auto;
+    flex-grow  : 0;
     flex-shrink: 0;
   }
+
   &[flex~="box:justify"] > {
     :first-child,
     :last-child {
-      height: auto;
-      flex-grow: 0;
+      height     : auto;
+      flex-grow  : 0;
       flex-shrink: 0;
     }
   }
@@ -369,8 +375,8 @@
   &[flex~="box:first"] > :first-child,
   &[flex~="box:justify"] > :first-child [flex~="dir:bottom"][flex~="box:justify"] > :last-child,
   &[flex~="box:last"] > :last-child {
-    height: auto;
-    flex-grow: 0;
+    height     : auto;
+    flex-grow  : 0;
     flex-shrink: 0;
   }
 }
@@ -379,7 +385,7 @@
   */
 @for $i from 0 through 10 {
   [flex-box="#{$i}"] {
-    flex-grow: $i;
+    flex-grow  : $i;
     flex-shrink: $i;
   }
 }
