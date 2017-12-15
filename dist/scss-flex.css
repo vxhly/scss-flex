@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.4.5
+ * @vaersion 1.4.6
  * @author 欧鹏程 vxhly <pengchengou@gmail.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -241,7 +241,7 @@
   align-items: stretch;
 }
 
-[flex~='mian-cross:center'] {
+[flex~='main-cross:center'] {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

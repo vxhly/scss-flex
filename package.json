@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/vxhly/scss-flex#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^7.2.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
