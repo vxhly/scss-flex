@@ -1,12 +1,12 @@
 // @Date:   2017-09-29 09:40:50 pm
 // @Email:  pengchengou@gmail.com
 // @Filename: scss-flex.scss
-// @Last modified time: 2017-12-15 11:34:57 am
+// @Last modified time: 2017-12-16 12:35:42 am
 // @License: MIT
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.4.6
+ * @vaersion 1.4.7
  * @author 欧鹏程 vxhly <pengchengou@gmail.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -329,7 +329,7 @@
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
     width      : auto;
-    height     : 0;
+    height     : auto;
     flex-grow  : 1;
     flex-shrink: 1;
   }
@@ -343,7 +343,7 @@
   &[flex~="box:last"] > *,
   &[flex~="box:mean"] > * {
     width      : auto;
-    height     : 0;
+    height     : auto;
     flex-grow  : 1;
     flex-shrink: 1;
   }

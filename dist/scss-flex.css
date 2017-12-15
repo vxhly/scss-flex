@@ -1,7 +1,7 @@
 /*!
  * scss-flex.scss
  *
- * @vaersion 1.4.6
+ * @vaersion 1.4.7
  * @author 欧鹏程 vxhly <pengchengou@gmail.com>
  *
  * 参考地址：https://github.com/lzxb/flex.css
@@ -332,7 +332,7 @@
 [flex~='dir:top'][flex~='box:last'] > *,
 [flex~='dir:top'][flex~='box:mean'] > * {
   width: auto;
-  height: 0;
+  height: auto;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -347,7 +347,7 @@
 [flex~='dir:bottom'][flex~='box:last'] > *,
 [flex~='dir:bottom'][flex~='box:mean'] > * {
   width: auto;
-  height: 0;
+  height: auto;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
