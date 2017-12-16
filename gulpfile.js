@@ -1,4 +1,14 @@
 /**
+ * @Date:   2017-03-25 12:10:17 pm
+ * @Email:  pengchengou@gmail.com
+ * @Project: BIGBIGADS TECHNOLOGY LIMITED
+ * @Filename: gulpfile.js
+ * @Last modified time: 2017-12-16 02:26:47 pm
+ * @License: MIT
+ * @Copyright: BIGBIGADS TECHNOLOGY LIMITED
+ */
+
+/**
  * 引入 gulp
  */
 var gulp = require('gulp'); // 基础库

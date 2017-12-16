@@ -1,5 +1,7 @@
 # scss-flex
 
+[![NPM version][npm-image]][npm-url] [![NPM download][download-image]][download-url]
+
 > flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器，可以通过 bower 和 npm 下载
 
 ## 参考
@@ -138,3 +140,8 @@ box：子元素设置
 取值范围(`0-10`)，单独设置子元素多余空间的如何分配，设置为 0，则子元素不占用多余的多余空间
 多余空间分配 = 当前 flex-box 值/子元素的 flex-box 值相加之和
 ```
+
+[download-image]: https://img.shields.io/npm/dm/scss-flex.svg?style=flat-square
+[download-url]: https://npmjs.org/package/scss-flex
+[npm-image]: https://img.shields.io/npm/v/scss-flex.svg?style=flat-square
+[npm-url]: https://vxhly.github.io/2016/08/flexbox-layout/
