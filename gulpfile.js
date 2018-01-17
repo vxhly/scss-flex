@@ -1,11 +1,10 @@
 /**
+ * @Author: vxhly
  * @Date:   2017-03-25 12:10:17 pm
  * @Email:  pengchengou@gmail.com
- * @Project:
- * @Filename: gulpfile.js
- * @Last modified time: 2018-01-15 05:32:55 pm
+ * @Last modified by:   vxhly
+ * @Last modified time: 2018-01-17 07:34:50 pm
  * @License: MIT
- * @Copyright:
  */
 
 /**
@@ -48,16 +47,16 @@ gulp.task('dev', function () {
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: [
-    'ie >= 8',
-    'ie_mob >= 10',
-    'ff >= 26',
-    'chrome >= 30',
-    'safari >= 6',
-    'opera >= 23',
-    'ios >= 5',
-    'android >= 2.3',
-    'bb >= 10'
-  ]
+        'ie >= 8',
+        'ie_mob >= 10',
+        'ff >= 26',
+        'chrome >= 30',
+        'safari >= 6',
+        'opera >= 23',
+        'ios >= 5',
+        'android >= 2.3',
+        'bb >= 10'
+      ]
     }))
     .pipe($.csscomb())
     .pipe($.cssbeautify({
@@ -74,10 +73,12 @@ gulp.task('dev', function () {
     .pipe($.rename({
       suffix: '.min'
     }))
+    .pipe($.sourcemaps.init())
     .pipe($.cleanCss({
       debug: true,
       compatibility: 'ie8'
     }))
+    .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('./dist'))
 });
 
