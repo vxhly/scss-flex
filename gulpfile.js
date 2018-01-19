@@ -3,7 +3,7 @@
  * @Date:   2017-03-25 12:10:17 pm
  * @Email:  pengchengou@gmail.com
  * @Last modified by:   vxhly
- * @Last modified time: 2018-01-17 07:34:50 pm
+ * @Last modified time: 2018-01-19 05:43:32 pm
  * @License: MIT
  */
 
@@ -50,12 +50,15 @@ gulp.task('dev', function () {
         'ie >= 8',
         'ie_mob >= 10',
         'ff >= 26',
-        'chrome >= 30',
+        'chrome >= 20',
         'safari >= 6',
-        'opera >= 23',
+        'opera >= 12',
+        'Firefox >= 24',
+        'Explorer >= 8',
         'ios >= 5',
         'android >= 2.3',
-        'bb >= 10'
+        'bb >= 10',
+        'last 1 version'
       ]
     }))
     .pipe($.csscomb())
@@ -74,10 +77,7 @@ gulp.task('dev', function () {
       suffix: '.min'
     }))
     .pipe($.sourcemaps.init())
-    .pipe($.cleanCss({
-      debug: true,
-      compatibility: 'ie8'
-    }))
+    .pipe($.cssnano())
     .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('./dist'))
 });
