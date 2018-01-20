@@ -1,13 +1,16 @@
+// @Author: vxhly
 // @Date:   2017-09-29 09:40:50 pm
 // @Email:  pengchengou@gmail.com
-// @Filename: scss-flex.scss
-// @Last modified time: 2018-01-15 04:43:01 pm
+// @Last modified by:   vxhly
+// @Last modified time: 2018-01-20 09:56:25 pm
 // @License: MIT
 /**
   * [定义 flex 布局]
   */
 [flex] {
   display: flex;
+  width  : 100%;
+  height : 100%;
 
   > {
     * {

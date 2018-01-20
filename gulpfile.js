@@ -3,7 +3,7 @@
  * @Date:   2017-03-25 12:10:17 pm
  * @Email:  pengchengou@gmail.com
  * @Last modified by:   vxhly
- * @Last modified time: 2018-01-19 05:43:32 pm
+ * @Last modified time: 2018-01-20 09:52:37 pm
  * @License: MIT
  */
 
@@ -36,14 +36,11 @@ var banner = ['/*!',
 ' * @link <%= pkg.homepage %>',
 ' * @license <%= pkg.license %>',
 ' */',
-'@charset "UTF-8";',
 ''].join('\n');
 
 gulp.task('dev', function () {
   return gulp.src(scssSrc)
-    .pipe($.sass({
-        outputStyle: 'compressed'
-      })
+    .pipe($.sass.sync()
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: [
