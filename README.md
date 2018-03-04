@@ -84,7 +84,7 @@ flex.css同时能兼容新版本和旧版本，保证了浏览器不支持新版
 
 ## flex 属性大全
 
-> 以下属性具体解释请移步 ![Flex 布局](https://vxhly.github.io/2016/08/flexbox-layout/) 或者 ![Flex 布局](https://github.com/vxhly/scss-flex/wiki/Flexbox-%E5%B8%83%E5%B1%80)
+> 以下属性具体解释请移步 [Flex 布局](https://vxhly.github.io/2016/08/flexbox-layout/) 或者 [Flex 布局](https://github.com/vxhly/scss-flex/wiki/Flexbox-%E5%B8%83%E5%B1%80)
 
 ```bash
 dir：主轴方向
