@@ -84,6 +84,8 @@ flex.css同时能兼容新版本和旧版本，保证了浏览器不支持新版
 
 ## flex 属性大全
 
+> 以下属性具体解释请移步 ![Flex 布局](https://vxhly.github.io/2016/08/flexbox-layout/) 或者 ![Flex 布局](https://github.com/vxhly/scss-flex/wiki/Flexbox-%E5%B8%83%E5%B1%80)
+
 ```bash
 dir：主轴方向
     top：从上到下
@@ -126,6 +128,31 @@ cross：交叉轴对齐方式
 
 main-cross: 主轴交叉轴对齐方式
     center: 居中
+
+content: 多根轴线的对齐方式
+    stretch: 轴线占满整个交叉轴（默认）
+    start: 与交叉轴的起点对齐
+    end: 与交叉轴的终点对齐
+    center: 与交叉轴的中点对齐
+    between: 与交叉轴两端对齐，轴线之间的间隔平均分布
+    around: 每根轴线两侧的间隔都相等
+
+# 以下属性需要写在子项目的 HTML 元素上
+
+item: 允许单个项目有与其他项目不一样的对齐方式
+    auto: 继承父元素的 align-items 属性（默认）
+    start: 居于轴顶部对齐
+    end: 居于轴尾部对齐
+    center：居于轴中心对齐
+    baseline：居于基线对齐
+    stretch：充满整个轴
+
+order: 定义项目的排列顺序。数值越小，排列越靠前，默认为0
+    0~12
+    -1~-12
+
+flex-box: 自定义项目的放大或者缩小比例
+    0~10
 
 box：子元素设置
     mean：子元素平分空间

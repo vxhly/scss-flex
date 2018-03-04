@@ -1,0 +1,113 @@
+// @Author: vxhly
+// @Date:   2018-03-04 10:34:24 pm
+// @Email:  pengchengou@gmail.com
+// @Filename: _box.scss
+// @Last modified by:   vxhly
+// @Last modified time: 2018-03-04 10:38:00 pm
+// @License: MIT
+//
+/**
+  * [子元素平分宽度]
+  */
+
+[flex~="box:first"] > *,
+[flex~="box:justify"] > *,
+[flex~="box:last"] > *,
+[flex~="box:mean"] > * {
+  width      : 0;
+  height     : auto;
+  flex-grow  : 1;
+  flex-shrink: 1;
+}
+/**
+  * [子元素平分宽度]
+  */
+
+[flex~="box:first"] > :first-child,
+[flex~="box:last"] > :last-child {
+  width      : auto;
+  flex-grow  : 0;
+  flex-shrink: 0;
+}
+/**
+  * [水平对齐]
+  */
+
+[flex~="box:justify"] > {
+  :first-child,
+  :last-child {
+    width      : auto;
+    flex-grow  : 0;
+    flex-shrink: 0;
+  }
+}
+/**
+  * [顶部对齐方式]
+  */
+
+[flex~="dir:top"] {
+  &[flex~="box:first"] > *,
+  &[flex~="box:justify"] > *,
+  &[flex~="box:last"] > *,
+  &[flex~="box:mean"] > * {
+    width      : auto;
+    height     : auto;
+    flex-grow  : 1;
+    flex-shrink: 1;
+  }
+}
+/**
+  * [底部对齐方式]
+  */
+[flex~="dir:bottom"] {
+  &[flex~="box:first"] > *,
+  &[flex~="box:justify"] > *,
+  &[flex~="box:last"] > *,
+  &[flex~="box:mean"] > * {
+    width      : auto;
+    height     : auto;
+    flex-grow  : 1;
+    flex-shrink: 1;
+  }
+}
+/**
+  * [顶部对齐方式]
+  */
+[flex~="dir:top"] {
+  &[flex~="box:first"] > :first-child,
+  &[flex~="box:last"] > :last-child {
+    height     : auto;
+    flex-grow  : 0;
+    flex-shrink: 0;
+  }
+
+  &[flex~="box:justify"] > {
+    :first-child,
+    :last-child {
+      height     : auto;
+      flex-grow  : 0;
+      flex-shrink: 0;
+    }
+  }
+}
+/**
+  * [底部对齐方式]
+  */
+[flex~="dir:bottom"] {
+  &[flex~="box:first"] > :first-child,
+  &[flex~="box:justify"] > :first-child [flex~="dir:bottom"][flex~="box:justify"] > :last-child,
+  &[flex~="box:last"] > :last-child {
+    height     : auto;
+    flex-grow  : 0;
+    flex-shrink: 0;
+  }
+}
+/**
+  * [自定义项目的放大或者缩小比例]
+  */
+@for $i from 0 through 10 {
+  [flex-box="#{$i}"] {
+    flex-grow  : $i;
+    flex-shrink: $i;
+  }
+}

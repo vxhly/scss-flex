@@ -1,0 +1,21 @@
+// @Author: vxhly
+// @Date:   2018-03-04 10:39:55 pm
+// @Email:  pengchengou@gmail.com
+// @Filename: _order.scss
+// @Last modified by:   vxhly
+// @Last modified time: 2018-03-04 10:41:33 pm
+// @License: MIT
+//
+/**
+  * [允许项目进行排列]
+  */
+@for $i from 0 through 12 {
+  [order="#{$i}"] {
+    order: $i;
+  }
+}
+@for $i from -1 through -12 {
+  [order="#{$i}"] {
+    order: $i;
+  }
+}

@@ -1,0 +1,80 @@
+// @Author: vxhly
+// @Date:   2018-03-04 10:17:55 pm
+// @Email:  pengchengou@gmail.com
+// @Filename: _flex-flow.scss
+// @Last modified by:   vxhly
+// @Last modified time: 2018-03-04 10:18:32 pm
+// @License: MIT
+//
+/**
+  * [布局方式：从左到右且不换行(默认)]
+  */
+[flex~='flow:left-nowrap'] {
+  flex-flow: row nowrap;
+}
+/**
+  * [布局方式：从左到右且换行，第一行在上方]
+  */
+[flex~='flow:left-wrap'] {
+  flex-flow: row wrap;
+}
+/**
+  * [布局方式：从左到右且换行，第一行在下方]
+  */
+[flex~='flow:left-reverse'] {
+  flex-flow: row wrap-reverse;
+}
+/**
+  * [布局方式：从右到左且不换行]
+  */
+[flex~='flow:right-nowrap'] {
+  flex-flow: row-reverse nowrap;
+}
+/**
+  * [布局方式：从右到左且换行，第一行在上方]
+  */
+[flex~='flow:right-wrap'] {
+  flex-flow: row-reverse wrap;
+}
+/**
+  * [布局方式：从右到左且换行，第一行在下方]
+  */
+[flex~='flow:right-reverse'] {
+  flex-flow: row-reverse wrap-reverse;
+}
+/**
+  * [布局方式：从上到下且不换行]
+  */
+[flex~='flow:top-nowrap'] {
+  flex-flow: column nowrap;
+}
+/**
+  * [布局方式：从上到下且换行，第一行在上方]
+  */
+[flex~='flow:top-wrap'] {
+  flex-flow: column wrap;
+}
+/**
+  * [布局方式：从上到下且换行，第一行在下方]
+  */
+[flex~='flow:top-reverse'] {
+  flex-flow: column wrap-reverse;
+}
+/**
+  * [布局方式：从下到上且不换行]
+  */
+[flex~='flow:bottom-nowrap'] {
+  flex-flow: column-reverse nowrap;
+}
+/**
+  * [布局方式：从下到上且换行，第一行在上方]
+  */
+[flex~='flow:bottom-wrap'] {
+  flex-flow: column-reverse wrap;
+}
+/**
+  * [布局方式：从下到上且换行，第一行在下方]
+  */
+[flex~='flow:bottom-reverse'] {
+  flex-flow: column-reverse wrap-reverse;
+}

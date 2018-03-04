@@ -1,0 +1,50 @@
+// @Author: vxhly
+// @Date:   2018-03-04 10:23:21 pm
+// @Email:  pengchengou@gmail.com
+// @Filename: _align-items.scss
+// @Last modified by:   vxhly
+// @Last modified time: 2018-03-04 10:26:52 pm
+// @License: MIT
+//
+/**
+  * [交叉轴对齐方式：从上到下(默认)]
+  */
+
+[flex~='cross:top'] {
+  align-items: flex-start;
+}
+/**
+  * [交叉轴对齐方式：从下到上]
+  */
+
+[flex~='cross:bottom'] {
+  align-items: flex-end;
+}
+/**
+  * [交叉轴对齐方式：居中对齐]
+  */
+
+[flex~='cross:center'] {
+  align-items: center;
+}
+/**
+  * [交叉轴对齐方式：跟随内容高度对齐]
+  */
+
+[flex~='cross:baseline'] {
+  align-items: baseline;
+}
+/**
+  * [交叉轴对齐方式：高度并排铺满]
+  */
+
+[flex~='cross:stretch'] {
+  align-items: stretch;
+}
+/**
+  * [主轴交叉轴对齐方式：居中]
+  */
+[flex~='main-cross:center'] {
+  justify-content: center;
+  align-items    : center;
+}

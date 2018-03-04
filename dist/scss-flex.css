@@ -1,7 +1,7 @@
 /*!
  * scss-flex - flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器，可以通过 bower 和 npm 下载
  * 
- * @version v1.6.0
+ * @version v1.6.1
  * 
  * @author vxhly <pengchengou@gmail.com>
  * 
@@ -9,6 +9,43 @@
  * @license MIT
  */
 @charset 'UTF-8';
+/*
+ * 清楚浏览器默认样式
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, Helvetica, 'Microsoft YaHei', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+  -ms-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+
+/*
+ * 开启 flexbox 布局
+ */
 /**
   * [定义 flex 布局]
   */
@@ -32,6 +69,9 @@
   display: flex;
 }
 
+/*
+ * 定义主轴 / 交叉轴方向
+ */
 /**
   * [主轴方向：从左到右(默认)]
   */
@@ -235,6 +275,9 @@
   flex-flow: column-reverse wrap-reverse;
 }
 
+/*
+ * 定义项目在主轴 / 交叉轴上的排列方式
+ */
 /**
   * [主轴对齐方式：从左到右(默认)]
   */
@@ -282,6 +325,20 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+/**
+  * [主轴交叉轴对齐方式：居中]
+  */
+[flex~='main-cross:center'] {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /**
@@ -402,6 +459,9 @@
   align-content: around;
 }
 
+/*
+ * 允许项目进行平分空间
+ */
 /**
   * [子元素平分宽度]
   */
@@ -530,7 +590,7 @@
 }
 
 /**
-  * [单个盒子对齐方式]
+  * [自定义项目的放大或者缩小比例]
   */
 [flex-box='0'] {
   -webkit-box-flex: 0;
@@ -640,4 +700,242 @@
   -webkit-flex-shrink: 10;
   -ms-flex-negative: 10;
   flex-shrink: 10;
+}
+
+/*
+ * 允许项目进行排列
+ */
+/**
+  * [允许项目进行排列]
+  */
+[order='0'] {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+[order='1'] {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+[order='2'] {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+[order='3'] {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+[order='4'] {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+[order='5'] {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+[order='6'] {
+  -webkit-box-ordinal-group: 7;
+  -webkit-order: 6;
+  -ms-flex-order: 6;
+  order: 6;
+}
+
+[order='7'] {
+  -webkit-box-ordinal-group: 8;
+  -webkit-order: 7;
+  -ms-flex-order: 7;
+  order: 7;
+}
+
+[order='8'] {
+  -webkit-box-ordinal-group: 9;
+  -webkit-order: 8;
+  -ms-flex-order: 8;
+  order: 8;
+}
+
+[order='9'] {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+  -ms-flex-order: 9;
+  order: 9;
+}
+
+[order='10'] {
+  -webkit-box-ordinal-group: 11;
+  -webkit-order: 10;
+  -ms-flex-order: 10;
+  order: 10;
+}
+
+[order='11'] {
+  -webkit-box-ordinal-group: 12;
+  -webkit-order: 11;
+  -ms-flex-order: 11;
+  order: 11;
+}
+
+[order='12'] {
+  -webkit-box-ordinal-group: 13;
+  -webkit-order: 12;
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+[order='-1'] {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+[order='-2'] {
+  -webkit-box-ordinal-group: -1;
+  -webkit-order: -2;
+  -ms-flex-order: -2;
+  order: -2;
+}
+
+[order='-3'] {
+  -webkit-box-ordinal-group: -2;
+  -webkit-order: -3;
+  -ms-flex-order: -3;
+  order: -3;
+}
+
+[order='-4'] {
+  -webkit-box-ordinal-group: -3;
+  -webkit-order: -4;
+  -ms-flex-order: -4;
+  order: -4;
+}
+
+[order='-5'] {
+  -webkit-box-ordinal-group: -4;
+  -webkit-order: -5;
+  -ms-flex-order: -5;
+  order: -5;
+}
+
+[order='-6'] {
+  -webkit-box-ordinal-group: -5;
+  -webkit-order: -6;
+  -ms-flex-order: -6;
+  order: -6;
+}
+
+[order='-7'] {
+  -webkit-box-ordinal-group: -6;
+  -webkit-order: -7;
+  -ms-flex-order: -7;
+  order: -7;
+}
+
+[order='-8'] {
+  -webkit-box-ordinal-group: -7;
+  -webkit-order: -8;
+  -ms-flex-order: -8;
+  order: -8;
+}
+
+[order='-9'] {
+  -webkit-box-ordinal-group: -8;
+  -webkit-order: -9;
+  -ms-flex-order: -9;
+  order: -9;
+}
+
+[order='-10'] {
+  -webkit-box-ordinal-group: -9;
+  -webkit-order: -10;
+  -ms-flex-order: -10;
+  order: -10;
+}
+
+[order='-11'] {
+  -webkit-box-ordinal-group: -10;
+  -webkit-order: -11;
+  -ms-flex-order: -11;
+  order: -11;
+}
+
+[order='-12'] {
+  -webkit-box-ordinal-group: -11;
+  -webkit-order: -12;
+  -ms-flex-order: -12;
+  order: -12;
+}
+
+/*
+ * 允许单个项目有与其他项目不一样的对齐方式
+ */
+/**
+  * [表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch(默认)]
+  */
+[flex~='item:auto'] {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/*
+ * [居于轴顶部对齐]
+ */
+[flex~='item:start'] {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/*
+ * [居于轴尾部对齐]
+ */
+[flex~='item:start'] {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+/*
+ * [居于轴中心对齐]
+ */
+[flex~='item:center'] {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+/*
+ * [居于基线对齐]
+ */
+[flex~='item:baseline'] {
+  -webkit-align-self: baseline;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+}
+
+/*
+ * [充满整个轴]
+ */
+[flex~='item:stretch'] {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
 }
