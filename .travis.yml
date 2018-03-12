@@ -3,16 +3,12 @@
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 08:44:58 pm
+# @Last modified time: 2018-03-12 09:04:32 pm
 # @License: MIT
 
 language: node_js
 node_js: 9
-sudo: required
-before_deploy:
-- npm-prepublish --verbose
 deploy:
-  skip_cleanup: true
   provider: npm
   email: pengchengou@gmail.com
   api_key:
