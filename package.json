@@ -8,7 +8,8 @@
     "build:patch": "gulp bump:patch && gulp dev",
     "build:prerelease": "gulp bump:prerelease && gulp dev",
     "build:minor": "gulp bump:minor && gulp dev",
-    "build:major": "gulp bump:major && gulp dev"
+    "build:major": "gulp bump:major && gulp dev",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "repository": {
     "type": "git",
@@ -35,18 +36,25 @@
   },
   "homepage": "https://github.com/vxhly/scss-flex#readme",
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^7.2.6",
+    "cz-conventional-changelog": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-bump": "^3.0.0",
+    "gulp-bump": "^3.1.0",
     "gulp-cssbeautify": "^1.0.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-cssnano": "^2.1.2",
-    "gulp-header": "^2.0.1",
+    "gulp-header": "^2.0.5",
     "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^1.0.0",
-    "gulp-sourcemaps": "^2.6.3"
+    "gulp-sourcemaps": "^2.6.4",
+    "npm-prepublish": "^1.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -1,0 +1,23 @@
+# @Author: vxhly
+# @Date:   2018-03-12 08:29:51 pm
+# @Email:  pengchengou@gmail.com
+# @Filename: .travis.yml
+# @Last modified by:   vxhly
+# @Last modified time: 2018-03-12 08:44:58 pm
+# @License: MIT
+
+language: node_js
+node_js: 9
+sudo: required
+before_deploy:
+- npm-prepublish --verbose
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: pengchengou@gmail.com
+  api_key:
+    secure: HOj1k5I6GUzREDBVDjHxrnDYVJT5pCsxO6LiE9W9ca8RVqSDJA57tfn5bGOecuvfU3CHIz/J6TT+zsfthGKvJGsiAxWCJTvD2YGNMZZtnO3X7QYTRQPSCBCoNxSQJi6fa1FVACoSdpxuutKncOUDZ9w0QG8Yjt+yd5uM9GEc4w2H+LoVzBNE9GtGXZjlC3G+c3IZ2N4cVD7gLfZrzIyWNlY9HZx4wp9B8RwGae8vEiCY3XCUeBhX8B/Bpqd4HxZ8fqfxINKD0aXnHNDIJqVHf3fjfKDxfndx4GGKIEY/oiJR5RXJgMNVwFuGODz/gdoc+WMr3doLcbJi/RxLZzfoB0wPGSr9ao2Zw0+zHI657gUcXF7OQF4ULSb5N5rzvimdINeqh3rZ3YI39cuqbBfF8FavNubpMvH8LKhWDyjEjkUiIL90aNRAUPJkBd4S7Cbi+XCtEQiZWw034w+gzTh4rHqRJ7b4LyKzDyLS0vse0R8v6dYRd6qzSOzTJy1J2yvZDNnCvyzAqIPeEfc0mhLSU76Fxrdq0Z1sy4AIg2Ts6e2G85/29YDyr3jsEprry0LuYV6dzaTUL/LO5fkIhYHBnnJzaFtaix2COhbzCH7K6ozxr+KN9N+HPDdu3mPFE3kf01q1SpmBrHKEmObnn8D8VzovJBg44JzESlLxbAmEk60=
+  on:
+    branch: master
+    tags: true
+    repo: vxhly/scss-flex
