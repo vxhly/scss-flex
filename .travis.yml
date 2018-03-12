@@ -3,12 +3,19 @@
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 09:24:46 pm
+# @Last modified time: 2018-03-12 10:06:19 pm
 # @License: MIT
+before_deploy: "echo 'ready?'"
+before_deploy:
+ - npm-prepublish --verbose
+install:
+ - npm install
+ - npm run changelog
 deploy:
   provider: npm
   email: pengchengou@gmail.com
   api_key: 954609e7-5033-4b65-9777-424bd6abcd5c
   on:
     tags: true
+    all_branches: true
     repo: vxhly/scss-flex
