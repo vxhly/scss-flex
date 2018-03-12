@@ -1,19 +1,27 @@
 # @Author: vxhly
-# @Date:   2018-03-12 08:29:51 pm
+# @Date:   2018-03-12 10:28:17 pm
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 10:13:08 pm
+# @Last modified time: 2018-03-12 10:53:47 pm
 # @License: MIT
-before_deploy: "echo 'ready?'"
+
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+dist: trusty
 before_deploy:
- - npm-prepublish --verbose
-install:
- - npm install
+- npm-prepublish --verbose
 deploy:
   provider: npm
+  skip_cleanup: true
+  script: npm run travis-publish
   email: pengchengou@gmail.com
-  api_key: 954609e7-5033-4b65-9777-424bd6abcd5c
+  api_key:
+    secure: AYlnU7ZPD9uMzf5OTN4APErtxjG/ml/qk5Hsc2VTp5ccLBQpPWyq5j0Zm/9QBz8KsS0RtkIh9Y4asl5kXGpFNmMFX80KKf7Ys50/tWt8jDay5BfT8xhefvhuaJcYPOLLU2ogGGfOa+hO4wN3euqqa6/7bEtNv5mACg6aCuCCDbBmt0pOu/K5ZZO7PhZCvh7lmuM2MCgp8j1xK9iL/DIsv0oYCbpQJT49bL9td9zSDp1dau7QitokTUK/qL6QMC9vxnc2vD51kyJiUSjXtnrHaaW5yP3mv49b2HJi+O1wN7zs3vcP2hbjMInSQU/eegplHKEiQD8vK3K8Ooy5rulp+ffv8oWp0BILZvfPoWimVVG6HLuf+nIQwFh8hv8kqLpyclrECYdP9SjxTqeU4oGHB8bcJCAaQD7woxRChoQyjo5+TF2+mND921DwTxCCUMzQkLmm5kRszi9VCDj4TD2XdRr258P5dqV4whAose1cfpCWjyaoexLXbLcjwJTd5PYHjQn6mT+jy0Ak7Dr//Bqympii5MKsPsKGXYqxBimrLfXlLVmYXp8mvPrHRD3M3fyzYDWLyEnhr4/+WgMa7Rbrs85m831TC9bvFlPQGZGB6YRufNIe6tXNl4hfhFq0i/rHBZRml2p7motjlcG/6oZT3cnZN29dAEOV5aTvaWUARdE=
   on:
     tags: true
     all_branches: true
