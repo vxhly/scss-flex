@@ -3,14 +3,13 @@
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 10:06:19 pm
+# @Last modified time: 2018-03-12 10:13:08 pm
 # @License: MIT
 before_deploy: "echo 'ready?'"
 before_deploy:
  - npm-prepublish --verbose
 install:
  - npm install
- - npm run changelog
 deploy:
   provider: npm
   email: pengchengou@gmail.com
