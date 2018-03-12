@@ -3,7 +3,7 @@
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 11:01:33 pm
+# @Last modified time: 2018-03-12 11:10:07 pm
 # @License: MIT
 
 language: node_js
@@ -13,7 +13,6 @@ before_deploy:
 - npm-prepublish --verbose
 deploy:
   provider: npm
-  skip_cleanup: true
   script: npm run travis-publish
   email: pengchengou@gmail.com
   api_key:
