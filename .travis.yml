@@ -3,10 +3,8 @@
 # @Email:  pengchengou@gmail.com
 # @Filename: .travis.yml
 # @Last modified by:   vxhly
-# @Last modified time: 2018-03-12 09:19:26 pm
+# @Last modified time: 2018-03-12 09:24:46 pm
 # @License: MIT
-script:
-  - npm publish
 deploy:
   provider: npm
   email: pengchengou@gmail.com
