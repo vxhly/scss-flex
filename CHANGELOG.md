@@ -1,25 +1,20 @@
-<a name="1.6.1"></a>
-## [1.6.1](https://github.com/vxhly/scss-flex/compare/v1.6.1-4...v1.6.1) (2018-03-12)
+<a name="1.6.2-1"></a>
+## [1.6.2-1](https://github.com/vxhly/scss-flex/compare/v1.6.2-0...v1.6.2-1) (2018-03-14)
+
+
+### Bug Fixes
+
+* **public/_base.scss:** delete html,body {width:100%;height:100%} ([411defc](https://github.com/vxhly/scss-flex/commit/411defc))
+
+
+### BREAKING CHANGES
+
+* **public/_base.scss:** delete style
 
 
 
-<a name="1.6.1-4"></a>
-## [1.6.1-4](https://github.com/vxhly/scss-flex/compare/v1.6.1-3...v1.6.1-4) (2018-03-12)
-
-
-
-<a name="1.6.1-3"></a>
-## [1.6.1-3](https://github.com/vxhly/scss-flex/compare/v1.6.1-2...v1.6.1-3) (2018-03-12)
-
-
-
-<a name="1.6.1-2"></a>
-## [1.6.1-2](https://github.com/vxhly/scss-flex/compare/v1.6.1-1...v1.6.1-2) (2018-03-12)
-
-
-
-<a name="1.6.1-1"></a>
-## [1.6.1-1](https://github.com/vxhly/scss-flex/compare/v1.6.1...v1.6.1-1) (2018-03-12)
+<a name="1.6.2-0"></a>
+## [1.6.2-0](https://github.com/vxhly/scss-flex/compare/v1.6.1...v1.6.2-0) (2018-03-12)
 
 
 ### ci
