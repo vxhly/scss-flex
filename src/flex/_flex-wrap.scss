@@ -1,23 +1,17 @@
-// @Author: vxhly
-// @Date:   2018-03-04 10:17:04 pm
-// @Email:  pengchengou@gmail.com
-// @Filename: _flex-wrap.scss
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-04 10:17:25 pm
-// @License: MIT
-//
 /**
   * [换行方式：不换行(默认)]
   */
 [flex~='wrap:nowrap'] {
   flex-wrap: nowrap;
 }
+
 /**
   * [换行方式：换行，第一行在上方]
   */
 [flex~='wrap:wrap'] {
   flex-wrap: wrap;
 }
+
 /**
   * [换行方式：换行，第一行在下方]
   */

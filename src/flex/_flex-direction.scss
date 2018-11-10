@@ -1,29 +1,24 @@
-// @Author: vxhly
-// @Date:   2018-03-04 10:10:16 pm
-// @Email:  pengchengou@gmail.com
-// @Filename: _flex-direction.scss
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-04 10:13:21 pm
-// @License: MIT
-//
 /**
   * [主轴方向：从左到右(默认)]
   */
 [flex~='dir:left'] {
   flex-direction: row;
 }
+
 /**
   * [主轴方向：从右到左)]
   */
 [flex~='dir:right'] {
   flex-direction: row-reverse;
 }
+
 /**
   * [主轴方向：从上到下]
   */
 [flex~='dir:top'] {
   flex-direction: column;
 }
+
 /**
   * [主轴方向：从下到上]
   */

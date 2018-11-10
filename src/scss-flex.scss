@@ -1,29 +1,28 @@
-// @Author: vxhly
-// @Date:   2017-09-29 09:40:50 pm
-// @Email:  pengchengou@gmail.com
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-04 10:54:45 pm
-// @License: MIT
-//
 /*
  * 清楚浏览器默认样式
  */
-@import "public/param", "public/base"; /*
+@import "public/param", "public/base";
+/*
  * 开启 flexbox 布局
  */
-@import "public/flex"; /*
+@import "public/flex";
+/*
  * 定义主轴 / 交叉轴方向
  */
-@import "flex/flex-direction", "flex/flex-wrap", "flex/flex-flow"; /*
+@import "flex/flex-direction", "flex/flex-wrap", "flex/flex-flow";
+/*
  * 定义项目在主轴 / 交叉轴上的排列方式
  */
-@import "flex/justify-content", "flex/align-items", "flex/align-content"; /*
+@import "flex/justify-content", "flex/align-items", "flex/align-content";
+/*
  * 允许项目进行平分空间
  */
-@import "flex/box"; /*
+@import "flex/box";
+/*
  * 允许项目进行排列
  */
-@import "flex/order"; /*
+@import "flex/order";
+/*
  * 允许单个项目有与其他项目不一样的对齐方式
  */
 @import "flex/align-self";

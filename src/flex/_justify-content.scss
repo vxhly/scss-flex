@@ -1,11 +1,3 @@
-// @Author: vxhly
-// @Date:   2018-03-04 10:19:56 pm
-// @Email:  pengchengou@gmail.com
-// @Filename: _justify-content.scss
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-04 10:26:49 pm
-// @License: MIT
-//
 /**
   * [主轴对齐方式：从左到右(默认)]
   */
@@ -13,6 +5,7 @@
 [flex~='main:left'] {
   justify-content: flex-start;
 }
+
 /**
   * [主轴对齐方式：从右到左]
   */
@@ -20,6 +13,7 @@
 [flex~='main:right'] {
   justify-content: flex-end;
 }
+
 /**
   * [主轴对齐方式：两端对齐]
   */
@@ -27,6 +21,7 @@
 [flex~='main:between'] {
   justify-content: space-between;
 }
+
 /**
   * [主轴对齐方式：分散对齐]
   */
@@ -34,16 +29,18 @@
 [flex~='main:around'] {
   justify-content: space-around;
 }
+
 /**
   * [主轴对齐方式：居中对齐]
   */
 [flex~='main:center'] {
   justify-content: center;
 }
+
 /**
   * [主轴交叉轴对齐方式：居中]
   */
 [flex~='main-cross:center'] {
   justify-content: center;
-  align-items    : center;
+  align-items: center;
 }

@@ -1,23 +1,16 @@
-// @Author: vxhly
-// @Date:   2018-01-20 01:07:40 pm
-// @Email:  pengchengou@gmail.com
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-14 04:31:32 pm
-// @License: MIT
-
 * {
   -webkit-tap-highlight-color: transparent;
-  outline                    : 0;
-  box-sizing                 : border-box;
-  vertical-align             : baseline;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
 
 body {
-  font-size       : $baseFontSize;
-  font-family     : -apple-system, Helvetica, "Microsoft YaHei", Arial, sans-serif;
-  line-height     : 1.5;
-  color           : $baseColor;
+  font-size: $baseFontSize;
+  font-family: -apple-system, Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  line-height: 1.5;
+  color: $baseColor;
   background-color: $baseBgColor;
   text-size-adjust: 100% !important;
-  user-select     : none;
+  user-select: none;
 }

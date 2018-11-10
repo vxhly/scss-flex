@@ -1,11 +1,3 @@
-// @Author: vxhly
-// @Date:   2018-03-04 10:29:15 pm
-// @Email:  pengchengou@gmail.com
-// @Filename: _align-content.scss
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-04 10:29:37 pm
-// @License: MIT
-//
 /**
   * [多根轴线的对齐方式：轴线占满整个交叉轴(默认)]
   */
@@ -13,6 +5,7 @@
 [flex~='content:stretch'] {
   align-content: stretch;
 }
+
 /**
   * [多根轴线的对齐方式：与交叉轴的起点对齐]
   */
@@ -20,6 +13,7 @@
 [flex~='content:start'] {
   align-content: flex-start;
 }
+
 /**
   * [多根轴线的对齐方式：与交叉轴的终点对齐]
   */
@@ -27,6 +21,7 @@
 [flex~='content:end'] {
   align-content: flex-end;
 }
+
 /**
   * [多根轴线的对齐方式：与交叉轴的中点对齐]
   */
@@ -34,6 +29,7 @@
 [flex~='content:center'] {
   align-content: center;
 }
+
 /**
   * [多根轴线的对齐方式：与交叉轴两端对齐，轴线之间的间隔平均分布]
   */
@@ -41,6 +37,7 @@
 [flex~='content:between'] {
   align-content: between;
 }
+
 /**
   * [多根轴线的对齐方式：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍]
   */
