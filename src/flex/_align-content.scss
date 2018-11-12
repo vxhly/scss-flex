@@ -31,17 +31,24 @@
 }
 
 /**
-  * [多根轴线的对齐方式：与交叉轴两端对齐，轴线之间的间隔平均分布]
+  * [所有行在容器中平均分布。相邻两行间距相等。容器的垂直轴起点边和终点边分别与第一行和最后一行的边对齐。]
   */
 
 [flex~='content:between'] {
-  align-content: between;
+  align-content: space-between;
 }
 
 /**
-  * [多根轴线的对齐方式：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍]
+  * [所有行在容器中平均分布，相邻两行间距相等。容器的垂直轴起点边和终点边分别与第一行和最后一行的距离是相邻两行间距的一半。]
   */
 
 [flex~='content:around'] {
-  align-content: around;
+  align-content: space-around;
+}
+/**
+  * [均匀分配容器,容器周围的空间相等]
+  */
+
+[flex~='content:evenly'] {
+  align-content: space-evenly;
 }
