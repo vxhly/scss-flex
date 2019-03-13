@@ -14,3 +14,17 @@
     }
   }
 }
+
+[inline-flex] {
+  display: inline-flex;
+
+  > {
+    * {
+      display: block;
+    }
+
+    [flex] {
+      display: inline-flex;
+    }
+  }
+}

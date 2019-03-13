@@ -2,7 +2,8 @@
   * [多根轴线的对齐方式：轴线占满整个交叉轴(默认)]
   */
 
-[flex~='content:stretch'] {
+[flex~='content:stretch'],
+[inline-flex~='content:stretch'] {
   align-content: stretch;
 }
 
@@ -10,7 +11,8 @@
   * [多根轴线的对齐方式：与交叉轴的起点对齐]
   */
 
-[flex~='content:start'] {
+[flex~='content:start'],
+[inline-flex~='content:start'] {
   align-content: flex-start;
 }
 
@@ -18,7 +20,8 @@
   * [多根轴线的对齐方式：与交叉轴的终点对齐]
   */
 
-[flex~='content:end'] {
+[flex~='content:end'],
+[inline-flex~='content:end'] {
   align-content: flex-end;
 }
 
@@ -26,7 +29,8 @@
   * [多根轴线的对齐方式：与交叉轴的中点对齐]
   */
 
-[flex~='content:center'] {
+[flex~='content:center'],
+[inline-flex~='content:center'] {
   align-content: center;
 }
 
@@ -34,7 +38,8 @@
   * [所有行在容器中平均分布。相邻两行间距相等。容器的垂直轴起点边和终点边分别与第一行和最后一行的边对齐。]
   */
 
-[flex~='content:between'] {
+[flex~='content:between'],
+[inline-flex~='content:between'] {
   align-content: space-between;
 }
 
@@ -42,13 +47,16 @@
   * [所有行在容器中平均分布，相邻两行间距相等。容器的垂直轴起点边和终点边分别与第一行和最后一行的距离是相邻两行间距的一半。]
   */
 
-[flex~='content:around'] {
+[flex~='content:around'],
+[inline-flex~='content:around'] {
   align-content: space-around;
 }
+
 /**
   * [均匀分配容器,容器周围的空间相等]
   */
 
-[flex~='content:evenly'] {
+[flex~='content:evenly'],
+[inline-flex~='content:evenly'] {
   align-content: space-evenly;
 }

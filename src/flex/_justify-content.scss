@@ -2,7 +2,8 @@
   * [主轴对齐方式：从左到右(默认)]
   */
 
-[flex~='main:left'] {
+[flex~='main:left'],
+[inline-flex~='main:left'] {
   justify-content: flex-start;
 }
 
@@ -10,7 +11,8 @@
   * [主轴对齐方式：从右到左]
   */
 
-[flex~='main:right'] {
+[flex~='main:right'],
+[inline-flex~='main:right'] {
   justify-content: flex-end;
 }
 
@@ -18,7 +20,8 @@
   * [主轴对齐方式：两端对齐]
   */
 
-[flex~='main:between'] {
+[flex~='main:between'],
+[inline-flex~='main:between'] {
   justify-content: space-between;
 }
 
@@ -26,21 +29,26 @@
   * [主轴对齐方式：分散对齐]
   */
 
-[flex~='main:around'] {
+[flex~='main:around'],
+[inline-flex~='main:around'] {
   justify-content: space-around;
 }
 
 /**
   * [主轴对齐方式：居中对齐]
   */
-[flex~='main:center'] {
+
+[flex~='main:center'],
+[inline-flex~='main:center'] {
   justify-content: center;
 }
 
 /**
   * [主轴交叉轴对齐方式：居中]
   */
-[flex~='main-cross:center'] {
+
+[flex~='main-cross:center'],
+[inline-flex~='main-cross:center'] {
   justify-content: center;
   align-items: center;
 }
