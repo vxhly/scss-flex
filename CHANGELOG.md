@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/vxhly/scss-flex/compare/v1.7.0...v1.8.0) (2019-03-13)
+
+
+### Features
+
+* **[inline-flex~=]:** 添加行内的 flexbox 弹性布局方式 ([c614df0](https://github.com/vxhly/scss-flex/commit/c614df0))
+
+
+
 # [1.7.0](https://github.com/vxhly/scss-flex/compare/v1.6.4...v1.7.0) (2018-11-12)
 
 

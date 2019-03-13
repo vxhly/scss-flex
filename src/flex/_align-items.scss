@@ -2,7 +2,8 @@
   * [交叉轴对齐方式：从上到下(默认)]
   */
 
-[flex~='cross:top'] {
+[flex~='cross:top'],
+[inline-flex~='cross:top'] {
   align-items: flex-start;
 }
 
@@ -10,7 +11,8 @@
   * [交叉轴对齐方式：从下到上]
   */
 
-[flex~='cross:bottom'] {
+[flex~='cross:bottom'],
+[inline-flex~='cross:bottom'] {
   align-items: flex-end;
 }
 
@@ -18,7 +20,8 @@
   * [交叉轴对齐方式：居中对齐]
   */
 
-[flex~='cross:center'] {
+[flex~='cross:center'],
+[inline-flex~='cross:center'] {
   align-items: center;
 }
 
@@ -26,7 +29,8 @@
   * [交叉轴对齐方式：跟随内容高度对齐]
   */
 
-[flex~='cross:baseline'] {
+[flex~='cross:baseline'],
+[inline-flex~='cross:baseline'] {
   align-items: baseline;
 }
 
@@ -34,14 +38,17 @@
   * [交叉轴对齐方式：高度并排铺满]
   */
 
-[flex~='cross:stretch'] {
+[flex~='cross:stretch'],
+[inline-flex~='cross:stretch'] {
   align-items: stretch;
 }
 
 /**
   * [主轴交叉轴对齐方式：居中]
   */
-[flex~='main-cross:center'] {
+
+[flex~='main-cross:center'],
+[inline-flex~='main-cross:center'] {
   justify-content: center;
   align-items: center;
 }

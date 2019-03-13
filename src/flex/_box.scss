@@ -2,116 +2,85 @@
   * [子元素平分宽度]
   */
 
-[flex~="box:first"]>*,
-[flex~="box:justify"]>*,
-[flex~="box:last"]>*,
-[flex~="box:mean"]>* {
+[flex~='box:first']>*,
+[inline-flex~='box:first']>*,
+[flex~='box:justify']>*,
+[inline-flex~='box:justify']>*,
+[flex~='box:last']>*,
+[inline-flex~='box:last']>*,
+[flex~='box:mean']>*,
+[inline-flex~='box:mean']>* {
   width: 0;
   height: auto;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
-/**
-  * [子元素平分宽度]
-  */
-
-[flex~="box:first"]> :first-child,
-[flex~="box:last"]> :last-child {
+[flex~='box:first']>*:first-child,
+[inline-flex~='box:first']>*:first-child,
+[flex~='box:last']>*:last-child,
+[inline-flex~='box:last']>*:last-child,
+[flex~='box:justify']>*:first-child,
+[inline-flex~='box:justify']>*:first-child,
+[flex~='box:justify']>*:last-child,
+[inline-flex~='box:justify']>*:last-child {
   width: auto;
   flex-grow: 0;
   flex-shrink: 0;
 }
 
 /**
-  * [水平对齐]
+  * [子元素平分高度]
   */
 
-[flex~="box:justify"]> {
-
-  :first-child,
-  :last-child {
-    width: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
+[flex~='dir:top'][flex~='box:mean']>*,
+[inline-flex~='dir:top'][inline-flex~='box:mean']>*,
+[flex~='dir:top'][flex~='box:first']>*,
+[inline-flex~='dir:top'][inline-flex~='box:first']>*,
+[flex~='dir:top'][flex~='box:last']>*,
+[inline-flex~='dir:top'][inline-flex~='box:justify']>*,
+[flex~='dir:bottom'][flex~='box:mean']>*,
+[inline-flex~='dir:bottom'][inline-flex~='box:mean']>*,
+[flex~='dir:bottom'][flex~='box:first']>*,
+[inline-flex~='dir:bottom'][inline-flex~='box:first']>*,
+[flex~='dir:bottom'][flex~='box:last']>*,
+[inline-flex~='dir:bottom'][inline-flex~='box:last']>*,
+[flex~='dir:bottom'][flex~='box:justify']>*,
+[inline-flex~='dir:bottom'][inline-flex~='box:justify']>* {
+  width: auto;
+  height: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
-/**
-  * [顶部对齐方式]
-  */
-
-[flex~="dir:top"] {
-
-  &[flex~="box:first"]>*,
-  &[flex~="box:justify"]>*,
-  &[flex~="box:last"]>*,
-  &[flex~="box:mean"]>* {
-    width: auto;
-    height: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-}
-
-/**
-  * [底部对齐方式]
-  */
-[flex~="dir:bottom"] {
-
-  &[flex~="box:first"]>*,
-  &[flex~="box:justify"]>*,
-  &[flex~="box:last"]>*,
-  &[flex~="box:mean"]>* {
-    width: auto;
-    height: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-}
-
-/**
-  * [顶部对齐方式]
-  */
-[flex~="dir:top"] {
-
-  &[flex~="box:first"]> :first-child,
-  &[flex~="box:last"]> :last-child {
-    height: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  &[flex~="box:justify"]> {
-
-    :first-child,
-    :last-child {
-      height: auto;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-  }
-}
-
-/**
-  * [底部对齐方式]
-  */
-[flex~="dir:bottom"] {
-
-  &[flex~="box:first"]> :first-child,
-  &[flex~="box:justify"]> :first-child [flex~="dir:bottom"][flex~="box:justify"]> :last-child,
-  &[flex~="box:last"]> :last-child {
-    height: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
+[flex~='dir:top'][flex~='box:first']>*:first-child,
+[inline-flex~='dir:top'][inline-flex~='box:first']>*:first-child,
+[flex~='dir:top'][flex~='box:last']>*:last-child,
+[inline-flex~='dir:top'][inline-flex~='box:last']>*:last-child,
+[flex~='dir:top'][flex~='box:justify']>*:first-child,
+[inline-flex~='dir:top'][inline-flex~='box:justify']>*:first-child,
+[flex~='dir:top'][flex~='box:justify']>*:last-child,
+[inline-flex~='dir:top'][inline-flex~='box:justify']>*:last-child,
+[flex~='dir:bottom'][flex~='box:first']>*:first-child,
+[inline-flex~='dir:bottom'][inline-flex~='box:first']>*:first-child,
+[flex~='dir:bottom'][flex~='box:last']>*:last-child,
+[inline-flex~='dir:bottom'][inline-flex~='box:last']>*:last-child,
+[flex~='dir:bottom'][flex~='box:justify']>*:first-child,
+[inline-flex~='dir:bottom'][inline-flex~='box:justify']>*:first-child,
+[flex~='dir:bottom'][flex~='box:justify']>*:last-child,
+[inline-flex~='dir:bottom'][inline-flex~='box:justify']>*:last-child {
+  height: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 /**
   * [自定义项目的放大或者缩小比例]
   */
+
 @for $i from 0 through 10 {
-  [flex-box="#{$i}"] {
+  [flex-box='#{$i}'],
+  [inline-flex-box='#{$i}'] {
     flex-grow: $i;
     flex-shrink: $i;
   }

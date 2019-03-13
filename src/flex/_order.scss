@@ -2,13 +2,13 @@
   * [允许项目进行排列]
   */
 @for $i from 0 through 12 {
-  [order="#{$i}"] {
+  [order='#{$i}'] {
     order: $i;
   }
 }
 
 @for $i from -1 through -12 {
-  [order="#{$i}"] {
+  [order='#{$i}'] {
     order: $i;
   }
 }

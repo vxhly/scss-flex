@@ -2,41 +2,52 @@
   * [表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch(默认)]
   */
 
-[flex~='item:auto'] {
+[flex~='item:auto'],
+[inline-flex~='item:auto'] {
   align-self: auto;
 }
 
-/*
- * [居于轴顶部对齐]
- */
-[flex~='item:start'] {
+/**
+  * [居于轴顶部对齐]
+  */
+
+[flex~='item:start'],
+[inline-flex~='item:start'] {
   align-self: flex-start;
 }
 
-/*
- * [居于轴尾部对齐]
- */
-[flex~='item:end'] {
+/**
+  * [居于轴尾部对齐]
+  */
+
+[flex~='item:end'],
+[inline-flex~='item:end'] {
   align-self: flex-end;
 }
 
-/*
- * [居于轴中心对齐]
- */
-[flex~='item:center'] {
+/**
+  * [居于轴中心对齐]
+  */
+
+[flex~='item:center'],
+[inline-flex~='item:center'] {
   align-self: center;
 }
 
-/*
- * [居于基线对齐]
- */
-[flex~='item:baseline'] {
+/**
+  * [居于基线对齐]
+  */
+
+[flex~='item:baseline'],
+[inline-flex~='item:baseline'] {
   align-self: baseline;
 }
 
-/*
- * [充满整个轴]
- */
-[flex~='item:stretch'] {
+/**
+  * [充满整个轴]
+  */
+
+[flex~='item:stretch'],
+[inline-flex~='item:stretch'] {
   align-self: stretch;
 }
