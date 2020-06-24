@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 // 添加不同浏览器的兼容
 const autoprefixer = require('autoprefixer')
 // 打包之前清掉原打包信息
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+// const { CleanWebpackPlugin }  = require('clean-webpack-plugin')
 // 结合 postcss 来解决不同浏览器的兼容
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 // 删除没必要的文件
@@ -59,7 +59,7 @@ module.exports = {
     }]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    // new CleanWebpackPlugin(['dist']),
     new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: 'scss-flex.min.css'
