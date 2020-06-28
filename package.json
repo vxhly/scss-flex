@@ -1,6 +1,6 @@
 {
   "name": "scss-flex",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "flexbox，移动端 flex 布局神器，兼容微信，UC，webview 等移动端主流浏览器",
   "main": "src/scss-flex.scss",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/vxhly/scss-flex#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.3",
+    "autoprefixer": "^9.8.4",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "cz-conventional-changelog": "^3.2.0",

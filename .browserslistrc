@@ -1,0 +1,15 @@
+ie >= 7
+ie_mob >= 10
+ff >= 26
+chrome >= 20
+safari >= 6
+opera >= 12
+Firefox >= 24
+Explorer >= 8
+ios >= 5
+android >= 2.3
+bb >= 10
+> 1%
+last 2 versions
+not ie <= 8
+ie 11
